@@ -11,6 +11,7 @@
 body {
     font-family: 'Nunito', sans-serif;
     background-color: #f9f9f9;
+    scroll-behavior: smooth;
 }
 
 /* Nav */
@@ -103,6 +104,7 @@ a:hover {
 
 .wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 40px;
@@ -160,6 +162,7 @@ a:hover {
     color: #0b8b6b;
     text-align: center;
     margin-top: 30px;
+    text-decoration: underline;
 }
 
 .kotak-row {
@@ -219,7 +222,6 @@ a:hover {
     background-color: white;
     box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.2);
     width: 250px;
-    height: 150px;
     margin-bottom: 20px;
 }
 
@@ -270,4 +272,28 @@ a:hover {
     height: 150px;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .p-img {
+        width: 200px;
+    }
+
+    .header-2 {
+        flex-direction: column;
+        margin-bottom: 0;
+        flex-basis: 0;
+    }
+    .card {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .kotak-row {
+        margin-right: 0;
+    }
 }
