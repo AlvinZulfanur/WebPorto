@@ -277,9 +277,35 @@ a:hover {
 @media screen and (max-width: 500px) {
     .wrapper {
         flex-direction: column;
+        gap: 0;
     }
-    .p-img {
+
+    .heading-1 {
+        font-size: 10px;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    .icons i {
+        
+    }
+
+    .navigation>li,a {
+        margin-right: 10px;
+    }
+
+    .navigasi {
+        height: 50px;
+    }
+
+    .p-img img {
         width: 200px;
+        margin-top: 20px;
+    }
+
+    .p-intro {
+        width: 100%;
+        text-align: center;
     }
 
     .header-2 {
@@ -288,7 +314,7 @@ a:hover {
         flex-basis: 0;
     }
     .card {
-        width: 100%;
+        width: 90%;
         align-items: center;
         margin-bottom: 0;
     }
