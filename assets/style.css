@@ -177,9 +177,10 @@ a:hover {
 }
 
 .kotak-row:hover {
-    background-color: #0b8b6b;
-    color: white;
+    /* background-color: #0b8b6b; */
+    color: #0b8b6b;
     transition: all 0.4s ease-in-out;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* 
@@ -218,9 +219,8 @@ a:hover {
 } */
 
 .card {
-    border-radius: 10px;
+    border-radius: 4px;
     background-color: white;
-    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.2);
     width: 250px;
     margin-bottom: 20px;
 }
